@@ -60,10 +60,7 @@ class Test_Custom(JmTestConfigurable):
             # 2024-04-29
             # 禁漫的【永久網域】加了cf，GitHub Actions请求也会失败。
             traceback_print_exec()
-            if self.client.client_key == JmApiClient.client_key:
-                return
-            else:
-                raise e
+            return
 
         JmModuleConfig.DOMAIN_HTML_LIST = [html_domain]
 
